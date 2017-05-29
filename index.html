@@ -1,0 +1,42 @@
+<html ng-app='blogApp'>
+	<head>
+		<title>AEVI test</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+				
+		
+	</head>
+	<body class="container">
+		<h3>Test Blog App</h3>
+
+		<nav class="navbar navbar-default row">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<ul class="nav navbar-nav">
+					<li><a ui-sref="home">Home</a></li>
+					<li><a ui-sref="create">Create blog</a></li>
+					<li><a ui-sref="list">List/ view blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="row">
+			<div class="span12">
+				<div class="well" ui-view></div>        
+			</div>
+		</div> 		
+
+		<script src="assets/lib/angularjs1.4.4/angular.js"></script>
+		<script src="assets/lib/angularjs1.4.4/angular-resource.js"></script>
+		<script src="assets/lib/angularjs1.4.4/angular-ui-router.js"></script>
+		
+		<script src="app/app.js"></script>
+		
+		<script src="app/components/blogcreate/blogCreateController.js"></script>
+		<script src="app/components/bloglist/blogListController.js"></script>
+		<script src="app/components/blogdetail/blogDetailController.js"></script>
+		
+		
+		
+	</body>
+</html>

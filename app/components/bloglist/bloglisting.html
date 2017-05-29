@@ -1,0 +1,7 @@
+<input ng-model="filterTags" placeholder="filter blog tags" type="text" class="form-control">
+
+<ul>
+  <li ng-repeat="blog in bloglist | filter:{tags:filterTags}">
+    <a ui-sref='list.detail({blogidstate:blog.id})'>{{blog.heading}} </a> 
+  </li>
+</ul>
